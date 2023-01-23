@@ -1,7 +1,7 @@
--   id: print-arguments
-    name: print the arguments
-    description: a test for pre-commit
-    entry: print-arguments
+-   id: check-er-suffix
+    name: check-er-suffix
+    description: check if any class ends with "-er"
+    entry: check-er-suffix
     language: python
     stages: [commit, push, manual]
 
