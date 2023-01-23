@@ -17,11 +17,11 @@ The rules that this pre-commit hook ought to check are the following:
 
 This hook requires you to have `ctags` installed, as it is used to analyze the code files (I have no clue how to do this on windows).
 
+[Pre-commit](https://github.com/pre-commit/pre-commit/) is a must, `ctags` also needs to be installed (but it usually is easily installable with `brew` or your favorite package manager)
+
 ### Installation
 
-Is a prerequisite [pre-commit](https://github.com/pre-commit/pre-commit/), `ctags` also needs to be installed (but it usually is easily installable with `brew` or your favorite package manager)
-
-Create the `.pre-commit-config.yaml` in the root of your git repository
+Create the `.pre-commit-config.yaml` in the root of your git repository.
 
 ```yaml
 repos:
