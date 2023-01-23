@@ -21,7 +21,7 @@ This hook requires you to have `ctags` installed, as it is used to analyze the c
 
 Is a prerequisite [pre-commit](https://github.com/pre-commit/pre-commit/), `ctags` also needs to be installed (but it usually is easily installable with `brew` or your favorite package manager)
 
-Insert the .pre-commit-config.yaml
+Create the `.pre-commit-config.yaml` in the root of your git repository
 
 ```yaml
 repos:
