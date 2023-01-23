@@ -1,0 +1,7 @@
+-   id: print-arguments
+    name: print the arguments
+    description: a test for pre-commit
+    entry: print-arguments
+    language: python
+    stages: [commit, push, manual]
+
