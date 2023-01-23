@@ -1,9 +1,9 @@
 import argparse
 import subprocess
-from typing import Optional, Sequence
+from typing import Sequence
 
 
-def check_file(filename: str) -> Optional[tuple[str]]:
+def check_file(filename: str) -> tuple[str, ...]:
     # Run ctags on the file
     ctags_output = subprocess.run(
         ["ctags", "-x", filename],
@@ -23,7 +23,11 @@ def check_file(filename: str) -> Optional[tuple[str]]:
         ctags_content.append(split_line[0])
 
     # Filter names that start with "get" or "set"
-    return tuple(name for name in ctags_content if name.startswith("get") or name.startswith("set"))
+    return tuple(
+        name
+        for name in ctags_content
+        if name.startswith("get") or name.startswith("set")
+    )
 
 
 def check_getters_setters(filenames: Sequence[str]) -> int:
@@ -41,7 +45,9 @@ def check_getters_setters(filenames: Sequence[str]) -> int:
             methods = check_file(argument)
             if methods:
                 for method_name in methods:
-                    print(f"Found a method which looks like a getter or setter: {method_name}")
+                    print(
+                        f"Found a method which looks like a getter or setter: {method_name}"
+                    )
                 retv = 1
 
     return retv

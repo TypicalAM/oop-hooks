@@ -1,9 +1,9 @@
 import argparse
 import subprocess
-from typing import Optional, Sequence
+from typing import Sequence, Tuple
 
 
-def check_file(filename: str) -> Optional[tuple[str]]:
+def check_file(filename: str) -> Tuple[str, ...]:
     # Run ctags on the file
     ctags_output = subprocess.run(
         ["ctags", "-x", filename],
