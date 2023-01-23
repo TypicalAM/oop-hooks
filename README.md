@@ -40,6 +40,10 @@ pre-commit install
 
 And it should work just like that!
 
+# Todos
+
+- [ ] How to explicitly ingore the hook (maybe with a comment along the lines of `oop_checker: ignore`, but then how will `ctags` respond to functions whose definitions span mutltiple lines?)
+
 # Discarded options
 
 Not implementing:
