@@ -25,7 +25,7 @@ Create the `.pre-commit-config.yaml` in the root of your git repository.
 
 ```yaml
 repos:
-  - repo: https://github.com/TypicalAM/oop_hooks
+  - repo: https://github.com/TypicalAM/oop-hooks
     rev: v0.1.0
     hooks:
       - id: check-getters-setters
