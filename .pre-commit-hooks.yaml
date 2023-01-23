@@ -4,4 +4,10 @@
     entry: check-er-suffix
     language: python
     stages: [commit, push, manual]
+-   id: check-getters-setters
+    name: check-getters-setters
+    description: check the code for any getters and setters
+    entry: check-getters-setters
+    language: python
+    stages: [commit, push, manual]
 
