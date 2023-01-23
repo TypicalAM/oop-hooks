@@ -38,7 +38,6 @@ def check_er_suffix(filenames: Sequence[str]) -> int:
             or argument.endswith(".h")
             or argument.endswith(".java")
         ):
-            print(f"Checking {argument}")
             classes = check_file(argument)
             if classes:
                 for class_name in classes:
