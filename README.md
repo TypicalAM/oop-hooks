@@ -5,9 +5,10 @@ A set of pre-commit hooks aiming to detect if certain object oriented programmin
 The rules that this pre-commit hook ought to check are the following:
 
 - [ ] There should be no functions which are not object methods (utils functions)
-- [ ] There should be no classes which end with the suffix "er" 
-    - [ ] Methods should be except from this rule [see here](https://www.wordmom.com/verbs/that-end-with-er)
-- [ ] Getters and Setters should not be allowed (`getValue()`, `setPrimaryKey()`), although library functions (those imported from libraries) are except to this rule (`getline()` in C++)
+- [X] There should be no classes which end with the suffix "er" 
+    - [X] Methods should be exempt from this rule [see here](https://www.wordmom.com/verbs/that-end-with-er)
+    - [X] Interfaces are exempt from this rule
+- [ ] Getters and Setters should not be allowed (`getValue()`, `setPrimaryKey()`), although library functions (those imported from libraries) are exempt from this rule (`getline()` in C++)
 
 Optionally:
 
