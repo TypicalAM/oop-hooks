@@ -43,7 +43,7 @@ And it should work just like that!
 ## Example output
 
 <p align="center">
-    <img width="700" src="test_run.png" />
+    <img width="700" src="assets/test_run.png" />
 </p>
 
 # Todos
