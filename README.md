@@ -10,6 +10,7 @@ The rules that this pre-commit hook ought to check are the following:
     - [X] Methods should be exempt from this rule [see here](https://www.wordmom.com/verbs/that-end-with-er)
     - [X] Interfaces should be exempt from this rule
 - [X] Getters and Setters should not be allowed (`getValue()`, `setPrimaryKey()`), although library functions (those imported from libraries) are exempt from this rule (`getline()` in C++)
+- [X] You can put `oop_checker: disable` at the end of the line to disable checking the specific method/class
 
 ## Using the hook
 
@@ -26,7 +27,7 @@ Create the `.pre-commit-config.yaml` in the root of your git repository.
 ```yaml
 repos:
   - repo: https://github.com/TypicalAM/oop-hooks
-    rev: v0.1.0
+    rev: v0.2.0
     hooks:
       - id: check-getters-setters
       - id: check-er-suffix
