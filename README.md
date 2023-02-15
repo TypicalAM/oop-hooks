@@ -47,10 +47,6 @@ And it should work just like that!
     <img width="700" src="assets/test_run.png" />
 </p>
 
-# Todos
-
-- [ ] How to explicitly ingore the hook (maybe with a comment along the lines of `oop_checker: ignore`, but then how will `ctags` respond to functions whose definitions span mutltiple lines?)
-
 # Discarded options
 
 Not implementing:
