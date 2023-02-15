@@ -16,6 +16,9 @@ def check_file(filename: str) -> tuple[str, ...]:
     # Filter out non-function lines
     ctags_content = []
     for line in ctags_output.stdout.splitlines():
+        if "oop_checker: disable" in line:
+            continue
+
         split_line = line.split()
         if len(split_line) <= 2 or split_line[1] != "function":
             continue
